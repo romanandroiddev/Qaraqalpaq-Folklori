@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "18648714869",
+    "project_id": "qaraqalpaq-folklori",
+    "storage_bucket": "qaraqalpaq-folklori.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:18648714869:android:17d382d90a5f7784b7723c",
+        "android_client_info": {
+          "package_name": "uz.project.qaraqalpaqfolklori"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "18648714869-sl0b6n7pc00t2kdl8hf231lrq2ravnma.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "uz.project.qaraqalpaqfolklori",
+            "certificate_hash": "b640b05d8efab6b21c1be301eff03ad3d3e3df70"
+          }
+        },
+        {
+          "client_id": "18648714869-7qpvgkg2vbsbvtnc1nv978n6lgmcqjrk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqwJ6xv2l5Z588Dtv7Mutei1nWY_t_nJU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "18648714869-7qpvgkg2vbsbvtnc1nv978n6lgmcqjrk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

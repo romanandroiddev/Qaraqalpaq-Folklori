@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash"></fragment>
+    <action
+        android:id="@+id/action_global_FragmentMain"
+        app:destination="@id/mainFragment" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/action_mainFragment_to_aytisMenuScreen"
+            app:destination="@id/aytisMenuScreen" />
+        <action
+            android:id="@+id/action_mainFragment_to_erteklerMenuScreen"
+            app:destination="@id/erteklerMenuScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_erteklerMenuScreen"
+            app:destination="@id/erteklerMenuScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_saltMenuScreen"
+            app:destination="@id/saltMenuScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_jumbaqMenuScreen"
+            app:destination="@id/jumbaqMenuScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_naqilMenuScreen"
+            app:destination="@id/naqilMenuScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_janltpashMenuScreen"
+            app:destination="@id/janltpashMenuScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_aytisMenuScreen"
+            app:destination="@id/aytisMenuScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_xaliqMenuScreen"
+            app:destination="@id/xaliqMenuScreen" />
+        <action
+            android:id="@+id/action_mainScreen_to_jumbaqMenuScreen2"
+            app:destination="@id/jumbaqMenuScreen" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_searchFragment"
+        app:destination="@id/searchFragment" />
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.search.SearchFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_search" />
+    <fragment
+        android:id="@+id/erteklerMenuScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.ertek.ErteklerMenuScreen"
+        android:label="screen_ertekler_menu"
+        tools:layout="@layout/screen_menu">
+        <action
+            android:id="@+id/action_erteklerMenuScreen_to_infoErtekScreen"
+            app:destination="@id/infoErtekScreen" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoErtekScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.ertek.InfoErtekScreen"
+        android:label="screen_info_ertek"
+        tools:layout="@layout/screen_info">
+        <argument
+            android:name="clickedItemPosition"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoSaltScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.salt.InfoSaltScreen"
+        android:label="InfoSaltScreen">
+        <argument
+            android:name="clickedItemPosition"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/saltMenuScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.salt.SaltMenuScreen"
+        android:label="SaltMenuScreen">
+        <action
+            android:id="@+id/action_saltMenuScreen_to_infoSaltScreen"
+            app:destination="@id/infoSaltScreen" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoJumbaqScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.jumbaq.InfoJumbaqScreen"
+        android:label="InfoJumbaqScreen">
+        <argument
+            android:name="clickedItemPosition"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/jumbaqMenuScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.jumbaq.JumbaqMenuScreen"
+        android:label="JumbaqMenuScreen">
+        <action
+            android:id="@+id/action_jumbaqMenuScreen_to_infoJumbaqScreen"
+            app:destination="@id/infoJumbaqScreen" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoNaqilScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.naqil.InfoNaqilScreen"
+        android:label="InfoNaqilScreen">
+        <argument
+            android:name="clickedItemPosition"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/naqilMenuScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.naqil.NaqilMenuScreen"
+        android:label="NaqilMenuScreen">
+        <action
+            android:id="@+id/action_naqilMenuScreen_to_infoNaqilScreen"
+            app:destination="@id/infoNaqilScreen" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/janltpashMenuScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.janltpash.JanltpashMenuScreen"
+        android:label="JanltpashMenuScreen">
+        <action
+            android:id="@+id/action_janltpashMenuScreen_to_infoJanltpashScreen"
+            app:destination="@id/infoJanltpashScreen" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoJanltpashScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.janltpash.InfoJanltpashScreen"
+        android:label="InfoJanltpashScreen">
+        <argument
+            android:name="clickedItemPosition"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/aytisMenuScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.aytis.AytisMenuScreen"
+        android:label="AytisMenuScreen">
+        <action
+            android:id="@+id/action_aytisMenuScreen_to_infoAytisScreen"
+            app:destination="@id/infoAytisScreen" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoAytisScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.aytis.InfoAytisScreen"
+        android:label="InfoAytisScreen">
+        <argument
+            android:name="clickedItemPosition"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoXaliqScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.xaliqqosiqlar.InfoXaliqScreen"
+        android:label="InfoXaliqScreen">
+        <argument
+            android:name="clickedItemPosition"
+            app:argType="integer" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/xaliqMenuScreen"
+        android:name="uz.project.qaraqalpaqfolklori.presenter.screens.xaliqqosiqlar.XaliqMenuScreen"
+        android:label="XaliqMenuScreen">
+        <action
+            android:id="@+id/action_xaliqMenuScreen_to_infoXaliqScreen"
+            app:destination="@id/infoXaliqScreen" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+    </fragment>
+</navigation>
